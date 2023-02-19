@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mulish:wght@300&family=Quicksand:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+:root{
+    --primary-color: #333;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #ddd;
+    font-size: 12px;
+
+    padding: 0;
+    margin: 0;
+}
+
+.lines1,.lines2,.lines3{
+    width: 25px;
+    height: 3px;
+    margin: 6px;
+}
+
+.crossxs .lines1{
+   transform: rotate(-45deg) translate(-6px,6px);
+}
+
+.crossxs .lines2{
+    opacity: 0;
+}
+
+.crossxs .lines3{
+    transform: rotate(45deg) translate(-6px,-6px);
+}
+
+/* Start Lef Sidebar  Section*/
+/* Start Left Sidebar */
+.sidebars{
+   min-height: 100vh;
+   background-color: var(--primary-color);
+}
+
+.sidebarlinks{
+    opacity: 0.75;
+    transition: all 0.4s;
+
+    position: relative;
+}
+
+.sidebarlinks:hover{
+    opacity: 1;
+    background-color: #555;
+}
+
+.currents{
+    box-shadow: -2px 0 10px #111;
+    opacity: 1;
+
+    transition: transform 0.3s;
+}
+
+.currents:hover{
+    transform: translateY(-1px);
+}
+
+.mores{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+/* End Left Sidebar */
+
+/* Start Top Sidebar */
+.topnavbars{
+    background-color: var(--primary-color);
+}
+
+.iconbullets{
+    position: relative;
+}
+
+.iconbullets i{
+    color: #888;
+}
+
+.iconbullets::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 20px;
+    top: 5px;
+
+}
+
+.breadcrumb a{
+    color: #f4f4f4;
+}
+/* End Top Sidebar */
+
+/* End Left Sidebar Section*/
+
+/* Start Content Section */
+.cardboxs{
+    transition: all .3s;
+}
+
+.cardboxs:hover{
+    box-shadow: 1px 3px 5px #bbb;
+    transform: translateY(-1px);
+}
+/* End Content Section */
